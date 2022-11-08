@@ -1,3 +1,11 @@
+:root {
+  --accent-color: #03a9f4;
+  --primary-color: #4caf50;
+  --dark-primary-color: #388e3c;
+  --text-color: #212121;
+  --text-secondary-color: #757575;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -10,11 +18,40 @@ h3 {
 h1 {
   font-weight: 700;
   font-size: 60px;
+  margin: 60px auto 10px;
 }
 h2 {
-  font-size: 25px;
+  font-size: 20px;
+  margin-bottom: 40px;
 }
 h3 {
   font-size: 20px;
   opacity: 0.6;
+}
+
+footer {
+  margin: 80px 20px;
+  font-size: small;
+}
+
+footer a {
+  color: var(--accent-color);
+}
+
+.headShot {
+  display: block;
+  margin: 60px auto;
+  width: 300px;
+  border-radius: 50%;
+  border: 10px solid #c4c4c4;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.homeText {
+  margin-right: 50px;
+}
+
+.btn {
+  padding: 10px 15px;
 }
