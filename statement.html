@@ -66,6 +66,47 @@
       </div>
     </nav>
 
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-6">
+          <div class="defra-statement">
+            <img
+              class="img-statement defra"
+              src="images/DEFRA-port.png"
+              alt="DEFRA and Kitty"
+            />
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="tech-statement">
+            <img
+              class="img-statement tech"
+              src="images/tech-port.png"
+              alt="Tech and Kitty"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function showTechStatement() {
+        let techStatement = document.querySelector(".tech-statement");
+        techStatement.innerHTML =
+          "To work as part of your 800 strong DDTS team would be a dream come true. After qualifying from workshops in platforms such as HTML, CSS, JavaScript, Bootstrap, and more, I’m now looking to be taken under your wings, continue to learn and develop, and become an invaluable part of your team. <br/> <br/> I enjoy the process of creating, planning and managing (projects at work, educational activities at home, website building etc) and am excited to directly use this process to learn about your cloud system. I understand the value of DEFRA’s data storage and would love the opportunity to train in this area and devote my career to continuing your mission of building and supporting innovative user-centered technologies. <br/> <br/> In my role at Battersea my main responsibilities included creating and inputting customer data onto our systems. I managed high caseloads of families and dogs needing homes, bringing them together under high time pressures from internal and external stakeholders. Succeeding in working to deadlines has provided me with the resilience to produce high quality work and meet objectives in a timely manner in the tech industry. <br/><br/> I have also created user guides, new spread sheets and systems in the Battersea Rehoming office which are still used to this day. My love of simple tech solutions has been evident throughout my career and I’m now ready to delve deeper into this world with the help of the DEFRA Academy. <br/><br/> Prior to Battersea I worked for 4 years as a dog agility instructor, where I consistently planned informative, fun lessons, offering simple advice and guidance to those under my tuition. My love of teaching and ability to connect with people and understand the way they learn will set me up as a great team player within an academy, then in a qualified working role.";
+      }
+      let techButton = document.querySelector(".tech");
+      techButton.addEventListener("click", showTechStatement);
+
+      function showDefraStatement() {
+        let defraStatement = document.querySelector(".defra-statement");
+        defraStatement.innerHTML =
+          " DEFRA is an agency I have been in awe of since my degree in Animal Welfare. I studied at an agricultural college and learnt about domestic, wild, captive and farm animal laws and regulations. It was eye opening and inspiring to see the natural beauty and diversity the world provides us with, and I completed many projects using the help of DEFRA’s guidelines, including one on sustainable beef farming in the UK, and another on the tragedy of illegal puppy farming. <br/> <br/> Of DEFRA’s 10 goals for their vision of making the world a better place to live, I am most passionate about: <br/>Preserving our beautiful landscapes. Most recently I hiked to the summit of Snowdon with my 18 month old son. It’s adventures like this that helps me share our beautiful country with my child. <br/> Sustainable farming and food: I buy fresh market fruit and vegetables as much as possible, and encourage my son to learn about the natural food production cycle. <br/> Protecting animals from health risk: Raised with an extremely high empathy for animals, I spent my childhood raising money for the RSPCA and most of my early adulthood working for Battersea Dog’s Home. <br/> Waste: I use cloth nappies at home in a bid to reduce the amount of waste going to landfill. We are very conscious of what we recycle! <br/> <br/> To be able to work for an agency  directly impacting the journey towards a green and healthy future would encompass all of my personal values.";
+      }
+      let defraButton = document.querySelector(".defra");
+      defraButton.addEventListener("click", showDefraStatement);
+    </script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
