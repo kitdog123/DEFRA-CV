@@ -56,6 +56,16 @@ p {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+.cv-headshot {
+  display: flex;
+  justify-content: center;
+  width: 160px;
+  border-radius: 50%;
+  border: 6px solid #c4c4c4;
+  padding: 6px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
 .homeText {
   margin-right: 50px;
   text-align: center;
@@ -147,14 +157,16 @@ p {
 }
 
 .cv-highlights {
-  margin: 60px 20px 20px;
+  margin: 10px auto 20px;
 }
 
+.cv-text {
+  margin: 40px auto 0;
+}
 .cv-image {
   max-width: 100%;
   margin: 0 auto 20px;
   display: flex;
-
   align-items: center;
   justify-content: center;
 }
@@ -165,4 +177,41 @@ p {
   margin: 10px 10px;
   padding: 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.cv-text h2 {
+  margin: 10px;
+  text-align: center;
+}
+
+.cv-text ul {
+  margin-left: 10px;
+  margin-right: 5px;
+  display: inline-block;
+  color: var(--text-secondary-color);
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.cv-intro {
+  margin: 40px auto;
+}
+
+.cv-intro h1 {
+  margin: 30px;
+  font-size: 30px;
+  font-weight: bolder;
+  line-height: 50px;
+  color: var(--dark-primary-color);
+}
+
+.cv-intro a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.cv-intro a:visited {
+  color: var(--primary-color);
+}
+.cv-intro a:hover {
+  color: var(--accent-color);
 }
