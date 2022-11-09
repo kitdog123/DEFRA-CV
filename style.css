@@ -17,16 +17,17 @@ h3 {
 }
 h1 {
   font-weight: 700;
-  font-size: 60px;
+  font-size: 64px;
   margin: 60px auto 10px;
 }
 h2 {
   font-size: 20px;
   margin-bottom: 40px;
+  font-weight: bold;
 }
 h3 {
   font-size: 20px;
-  opacity: 0.6;
+  opacity: 0.9;
 }
 
 footer {
@@ -36,6 +37,13 @@ footer {
 
 footer a {
   color: var(--accent-color);
+}
+
+p {
+  color: var(--text-secondary-color);
+  text-align: center;
+  font-size: 16px;
+  line-height: 30px;
 }
 
 .headShot {
@@ -52,6 +60,56 @@ footer a {
   margin-right: 50px;
 }
 
-.btn {
+.button {
+  background: var(--primary-color);
+  border-radius: 4px;
+  color: white;
+  font-size: 18px;
+  border: 3px solid var(--accent-color);
   padding: 10px 15px;
+  text-decoration: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.button:hover {
+  background: var(--dark-primary-color);
+  color: white;
+}
+
+.img-about {
+  border-radius: 3px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: block;
+  margin: 60px auto;
+  width: 340px;
+}
+
+.h1-about {
+  text-align: left;
+  margin: 30px 20px 40px 0;
+  font-size: 30px;
+}
+
+.p-about {
+  text-align: left;
+  margin-left: 0 20px 20px 0;
+}
+
+.about-row {
+  background-color: rgba(76, 175, 80, 0.1);
+  border-radius: 1px;
+  margin: 10px 0;
+}
+
+.about-row-alt {
+  background-color: rgba(76, 175, 80, 0.3);
+  border-radius: 1px;
+  margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .h1-about,
+  .p-about {
+    text-align: center;
+  }
 }
