@@ -31,7 +31,7 @@ h3 {
 }
 
 footer {
-  margin: 80px 20px;
+  margin: 40px 20px;
   font-size: small;
 }
 
@@ -203,15 +203,42 @@ p {
   line-height: 50px;
   color: var(--dark-primary-color);
 }
-
+@media (max-width: 768px) {
+  .cv-intro h1 {
+    font-size: 25px;
+    margin-left: 80px;
+    line-height: 40px;
+  }
+}
 .cv-intro a {
-  color: var(--primary-color);
+  color: var(--accent-color);
   text-decoration: none;
 }
 
 .cv-intro a:visited {
-  color: var(--primary-color);
+  color: var(--accent-color);
 }
 .cv-intro a:hover {
+  color: var(--primary-color);
+}
+
+.contact {
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  border-radius: 4px;
+  margin: 40px 10px 10px;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-size: 16px;
+  text-align: center;
+}
+.contact a {
   color: var(--accent-color);
+  text-decoration: none;
+}
+
+.contact a:visited {
+  color: var(--accent-color);
+}
+.contact a:hover {
+  color: var(--primary-color);
 }
