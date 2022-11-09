@@ -145,3 +145,24 @@ p {
     margin: 10px auto;
   }
 }
+
+.cv-highlights {
+  margin: 60px 20px 20px;
+}
+
+.cv-image {
+  max-width: 100%;
+  margin: 0 auto 20px;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.cv-section {
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  border-radius: 4px;
+  margin: 10px 10px;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
