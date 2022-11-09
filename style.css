@@ -58,6 +58,7 @@ p {
 
 .homeText {
   margin-right: 50px;
+  text-align: center;
 }
 
 .button {
@@ -69,6 +70,8 @@ p {
   padding: 10px 15px;
   text-decoration: none;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 10px 10px;
+  max-width: 200px;
 }
 
 .button:hover {
@@ -111,5 +114,22 @@ p {
   .h1-about,
   .p-about {
     text-align: center;
+  }
+}
+
+@media (max-width: 645px) {
+  .homeText {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 589px) and (max-width: 865px) {
+  .button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
   }
 }
