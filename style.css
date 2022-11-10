@@ -84,6 +84,12 @@ p {
   max-width: 200px;
 }
 
+@media (max-width: 394px) {
+  .button {
+    display: none;
+  }
+}
+
 .button:hover {
   background: var(--dark-primary-color);
   color: white;
